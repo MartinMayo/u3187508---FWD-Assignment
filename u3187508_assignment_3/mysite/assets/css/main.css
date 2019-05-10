@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+/*Index CSS*/
+body {
+	background-color: #ffecc2;
+}
+
+header {
+	background-color: gray;
+	margin-top: 0px;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	overflow: hidden;
+	background-color: white;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+nav li {
+	left: 50%;
+	display: inline;
+	position: center;
+	height: 100%;
+}
+
+nav a {
+	color: black;
+	display: inline-block;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav img {
+	height: 16px;
+	weight: 80px;
+	}
+
+nav ul li a:hover {
+	color: green;
+	background-color: #ff8c8c;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: "Comic Sans MS", cursive;
+	color: blue;
+}
+
+p {
+	font-family: "Comic Sans MS", cursive;
+}
+
+h1 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 72px;
+	text-align: center;
+	color: white;
+	text-shadow: -1px 1px 0 #000,
+	1px -1px 0 #000,
+	-1px -1px 0 #000,
+	1px 1px 0 #000;
+}
+
+h3 {
+	color: #d55a00;
+}
+
+#imgs {
+	color: green;
+}
+
+.pictures table{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.pictures td, th{
+	border: 5px solid black;
+}
+
+.pictures td{
+	text-align: center;
+}
+
+.pictures img {
+	height: 300px;
+	weight: 300px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer {
+	text-align: center;
+	background-color: #ff8c8c;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #23255c;
+}
+
+/*Heritage List CSS*/
+#hlist .profile {
+	display: inline;
+	height: 200px;
+	weight: 100px;
+	float: left;
+	margin-top: 8px;
+	margin-right: 10px;
+}
+
+#hlist .RC_Story {
+	font-family: Nueva STD, Arial, Helvetica, sans-serif;
+}
+
+#hlist .sgnt {
+	font-style: italic;	
+}
+
+#hlist .MM_Story {
+	font-family: Maiandra GD, Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-device-width: 768px)
+and (min-device-width: 480px) and (orientation: portrait)
+{
+	nav {
+		position: relative;
+		display: inline-block;
+	}
+	
+	.ddownBtn {
+		display: none;
+		postion: absolute;
+	}
+	
+	.mainBtn:hover .ddownBtn {
+		display: block;
+	}
+	
+	.pictures table {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}	
+}
